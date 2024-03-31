@@ -56,3 +56,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
   }
 });
+
+
+//Expo sürüm hataları çözüldü.
