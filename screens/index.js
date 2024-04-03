@@ -1,9 +1,9 @@
-import search from "./search";
+import Search from "./Search";
 import Home from "./Home";
-import profile from "./profile";
+import Profile from "./Profile";
 
 export {
     Home,
-    search,
-    profile
+    Search,
+    Profile
 }
