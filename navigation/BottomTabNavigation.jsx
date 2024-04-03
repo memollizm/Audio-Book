@@ -1,9 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react';
-import {createBottomTabNavigator} from '@react-navigation-bottom-tabs';
-import {Home, profile, search} from "../screens";
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {Home, Profile, Search} from "../screens/index";
 import { Ionicons } from "@expo/vector-icons"
 import { COLORS } from '../constants/index';
+import { SearchBar } from 'react-native-screens';
 
 
 
@@ -27,10 +28,10 @@ const screenOptions = {
 const BottomTabNavigation = () => {
   return (
     <Tab.Navigator screenOptions={screenOptions}>
-        <Tab.screen 
-        name="Home" 
-        component={Home}
-        options={{
+        <Tab.Screen 
+         name="Home" 
+         component={Home}
+         options={{
             tabBarIcon: ({focused})=> {
                 return(
                  <Ionicons 
@@ -40,13 +41,13 @@ const BottomTabNavigation = () => {
                  />
                 );
             },
-        }}
+         }}
         />
         
-        <Tab.screen 
-        name="search" 
-        component={search}
-        options={{
+        <Tab.Screen 
+         name="Search" 
+         component={Search}
+         options={{
             tabBarIcon: ({focused})=> {
                 return(
                  <Ionicons 
@@ -56,13 +57,13 @@ const BottomTabNavigation = () => {
                  />
                 );
             },
-        }}
+         }}
         />
 
-        <Tab.screen 
-        name="profile" 
-        component={profile}
-        options={{
+        <Tab.Screen 
+         name="Profile" 
+         component={Profile}
+         options={{
             tabBarIcon: ({focused})=> {
                 return(
                  <Ionicons 
@@ -72,7 +73,7 @@ const BottomTabNavigation = () => {
                  />
                 );
             },
-        }}
+         }}
         />
         
     </Tab.Navigator>
