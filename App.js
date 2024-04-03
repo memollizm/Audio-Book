@@ -58,4 +58,3 @@ const styles = StyleSheet.create({
 });
 
 
-//Expo sürüm hataları çözüldü.
