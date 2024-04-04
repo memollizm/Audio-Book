@@ -1,13 +1,10 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StatusBar } from 'expo-status-bar';
 import BottomTabNavigation from './navigation/BottomTabNavigation';
-import { StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from "expo-splash-screen";
 import { useCallback } from 'react';
-import { Home } from './screens';
-
+import { Cart } from './screens';
 
 
 const Stack = createNativeStackNavigator();
@@ -33,7 +30,6 @@ export default function App() {
     return null;
   }
 
-
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -42,22 +38,17 @@ export default function App() {
           component={BottomTabNavigation}
           options={{headerShown:false}}
         />
+
+        <Stack.Screen
+          name='Cart'
+          component={Cart}
+          options={{headerShown:false}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  textStyles: {
-    fontFamily: "extrabold",
-    fontSize: 20,
-  }
-});
+
 
 
