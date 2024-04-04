@@ -5,3 +5,6 @@ export const COLORS = {
     gray2: '#CCCCCC'
   };
 
+export const SIZES = {
+  
+}
