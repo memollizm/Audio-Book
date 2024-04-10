@@ -1,4 +1,5 @@
 import { Dimensions } from "react-native";
+import styles from "../screens/home.style";
 const { height, width} = Dimensions;
 
 const COLORS = {
@@ -38,3 +39,5 @@ const SHADOWS = {
         shadowOpacity: 0.25
     }
 }
+
+export default styles

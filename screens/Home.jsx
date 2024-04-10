@@ -1,4 +1,4 @@
-import { TouchableOpacity, Text, View } from 'react-native'
+import { TouchableOpacity, Text, View, ScrollView } from 'react-native'
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { Ionicons } from '@expo/vector-icons';
@@ -24,12 +24,12 @@ const Home = () => {
           </View>
         </View>
       </View>
-
+      <ScrollView>
+        <Welcome/>
+      </ScrollView>
     </SafeAreaView>
   )
 }
 
 export default Home
-
-//Ekranlar bitirilecek
 
