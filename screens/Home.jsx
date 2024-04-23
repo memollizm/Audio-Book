@@ -1,9 +1,11 @@
 import { TouchableOpacity, Text, View, ScrollView } from 'react-native'
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { Ionicons } from '@expo/vector-icons';
-import { Fontisto } from '@expo/vector-icons';
+import { Ionicons, Fontisto } from '@expo/vector-icons';
 import styles from './home.style';
+import Welcome from '../components/home/Welcome';
+import Carousel from '../components/home/Carousel';
+import Headings from '../components/home/Headings';
 
 const Home = () => {
   return (
@@ -26,6 +28,8 @@ const Home = () => {
       </View>
       <ScrollView>
         <Welcome/>
+        <Carousel/>
+        <Headings/>
       </ScrollView>
     </SafeAreaView>
   )
