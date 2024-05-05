@@ -40,7 +40,7 @@ const Details = ({navigation}) => {
         <View style={styles.titleRow}>
           <Text style={styles.title}>Pierre Cardin 160x230</Text>
           <View style={styles.priceWrapper}>
-           <Text style={styles.price}>5700 TL</Text>
+           <Text style={styles.price}>10000 TL</Text>
           </View>
         </View>
       </View>
@@ -78,9 +78,9 @@ const Details = ({navigation}) => {
         <View style={styles.descriptionWraper}>
           <Text style={styles.description}>Açıklama</Text>
           <Text style={styles.descText}>
-          Ünlü modacı Pierre Cardin'in estetik anlayışını yansıtan lüks ve şık tasarımlara sahip halı koleksiyonlarıdır. 
-          Yüksek kaliteli malzemeler ve özenli işçilikleriyle bilinirler. İnce detaylar ve modern desenler, 
-          evlerde veya işyerlerinde zarif bir atmosfer oluşturmak için tasarlanmıştır. 
+           Ünlü modacı Pierre Cardin'in estetik anlayışını yansıtan lüks ve şık tasarımlara sahip halı koleksiyonlarıdır. 
+           Yüksek kaliteli malzemeler ve özenli işçilikleriyle bilinirler. İnce detaylar ve modern desenler, 
+           evlerde veya işyerlerinde zarif bir atmosfer oluşturmak için tasarlanmıştır. 
           </Text>
         </View>
 
