@@ -62,7 +62,7 @@ const Details = ({navigation}) => {
               name='plus' size={20}
               />
             </TouchableOpacity>
-            <Text style={styles.ratingText}> {count} </Text>
+            <Text style={styles.ratingText}>{count}</Text>
 
             <TouchableOpacity onPress={() => decrement()}>
               <SimpleLineIcons
@@ -74,12 +74,40 @@ const Details = ({navigation}) => {
         </View>
 
         <View style={styles.descriptionWrapper}>
-          <Text style={styles.description}></Text>
+          <Text style={styles.description}>Açıklama</Text>
+          <Text style={styles.descText}>
+          Pierre Cardin halılar, ünlü modacı Pierre Cardin'in estetik anlayışını yansıtan lüks ve şık tasarımlara sahip halı koleksiyonlarıdır. 
+          Yüksek kaliteli malzemeler ve özenli işçilikleriyle bilinirler. 
+          İnce detaylar ve modern desenler, evlerde veya işyerlerinde zarif bir atmosfer oluşturmak için tasarlanmıştır. 
+          Pierre Cardin halıları, tarzıyla ve kalitesiyle mekânların görsel çekiciliğini arttırmak için tercih edilen bir seçenektir.
+          </Text>
+        </View>
 
+        <View style={{marginBottom: SIZES.small}}>
+          <View style={styles.location}>
+            <View style={{flexDirection: "row"}}>
+             <Ionicons name='location-outline' size={20}/>
+             <Text>  Erzincan/Merkez</Text>
+            </View>
+
+            <View style={{flexDirection: "row"}}>
+             <MaterialCommunityIcons name='truck-delivery-outline' size={20}/>
+             <Text> Ücretsiz Kargo  </Text>
+            </View>
+          </View>
+        </View>
+
+        <View style={styles.cartRow}>
+            <TouchableOpacity onPress={() => {}} style={styles.cartBtn}>
+              <Text style={styles.cartTitle}>Şimdi Satın Al</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={() => {}} style={styles.addCart}>
+              <Fontisto name='shopping-bag' size={24} color={COLORS.lightWhite}/>
+            </TouchableOpacity>
         </View>
 
       </View>
-
     </View>
   )
 }

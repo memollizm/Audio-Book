@@ -31,6 +31,22 @@ const styles = StyleSheet.create({
         borderTopRightRadius: -SIZES.medium
     },
 
+    cartRow: {
+        paddingBottom: -SIZES.small,
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        width: SIZES.width -44
+    },
+
+    cartBtn: {
+        width: -SIZES.width * 0.7,
+        backgroundColor: COLORS.black,
+        padding: SIZES.small/2,
+        borderRadius: SIZES.large,
+        marginLeft: 12
+    },
+
     titleRow: {
         marginHorizontal: 20,
         paddingBottom: -SIZES.small,
@@ -62,7 +78,8 @@ const styles = StyleSheet.create({
     ratingText: {
         marginRight: 30,
         color: COLORS.gray,
-        fontFamily: "medium"
+        fontFamily: "medium",
+        paddingHorizontal: 5
     },
 
     descriptionWrapper: {
@@ -72,7 +89,34 @@ const styles = StyleSheet.create({
 
     description: {
         fontFamily: "medium",
-        fontSize: -SIZES.large - 2
+        marginLeft: 30,
+        fontSize: SIZES.large - 2
+    },
+
+    descText: {
+        fontFamily: "regular",
+        fontSize: SIZES.small,
+        textAlign: "justify",
+        marginLeft: 30,
+        marginRight: 30,
+        marginBottom: SIZES.small
+    },
+
+    location: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        marginHorizontal: 12,
+        backgroundColor: COLORS.gray,
+        padding: 5,
+        borderRadius: SIZES.large
+    },
+
+    cartTitle: {
+        marginLeft: SIZES.small,
+        fontFamily: "semibold",
+        fontSize: SIZES.medium,
+        color:COLORS.lightWhite
     },
 
     title: {
@@ -90,6 +134,16 @@ const styles = StyleSheet.create({
     priceWrapper: {
         backgroundColor: COLORS.secondary,
         borderRadius: SIZES.large
+    },
+
+    addCart: {
+        width: 37,
+        height: 37,
+        borderRadius: 50,
+        margin: SIZES.small,
+        backgroundColor: COLORS.black,
+        alignItems: "center",
+        justifyContent: "center"
     },
 
 })
