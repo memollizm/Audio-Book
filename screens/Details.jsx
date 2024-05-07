@@ -40,75 +40,46 @@ const Details = ({navigation}) => {
         <View style={styles.titleRow}>
           <Text style={styles.title}>Pierre Cardin 160x230</Text>
           <View style={styles.priceWrapper}>
-           <Text style={styles.price}>10000 TL</Text>
+            <Text style={styles.price}>12000 TL</Text>
           </View>
         </View>
-      </View>
 
-      <View style={styles.ratingRow}>
+        <View style={styles.ratingRow}>
+          <View style={styles.rating}>
+            {[1,2,3,4,5].map((index) =>(
+              <Ionicons 
+                key={index}
+                name='star'
+                size={24}
+                color="gold"/>
+            ))}
+            <Text style={styles.ratingText}>(4.9)</Text>
+          </View>
 
-        <View style={styles.rating}>
-          {[1,2,3,4,5].map((index) => ( 
-            <Ionicons
-            key={index}
-            name='star'
-            size={24}
-            color="gold"
-            />
-          ))}
-
-          <Text style={styles.ratingText}> {count} </Text>
-        </View>
-
-        <View style={styles.rating}>
-          <TouchableOpacity onPress={() => increment()}>
-            <SimpleLineIcons
+          <View style={styles.rating}>
+            <TouchableOpacity onPress={() => increment()}>
+              <SimpleLineIcons
               name='plus' size={20}
-            />
-          </TouchableOpacity>
-          <Text style={styles.ratingText}> {count} </Text>
+              />
+            </TouchableOpacity>
+            <Text style={styles.ratingText}> {count} </Text>
 
-          <TouchableOpacity onPress={() => decrement()}>
-            <SimpleLineIcons
+            <TouchableOpacity onPress={() => decrement()}>
+              <SimpleLineIcons
               name='minus' size={20}
-            />
-          </TouchableOpacity>
-
-        </View>
-        <View style={styles.descriptionWraper}>
-          <Text style={styles.description}>Açıklama</Text>
-          <Text style={styles.descText}>
-           Ünlü modacı Pierre Cardin'in estetik anlayışını yansıtan lüks ve şık tasarımlara sahip halı koleksiyonlarıdır. 
-           Yüksek kaliteli malzemeler ve özenli işçilikleriyle bilinirler. İnce detaylar ve modern desenler, 
-           evlerde veya işyerlerinde zarif bir atmosfer oluşturmak için tasarlanmıştır. 
-          </Text>
-        </View>
-
-        <View style={{marginBottom: SIZES.small}}>
-          <View style={styles.location}>
-            <View style={{flexDirection: "row"}}>
-             <Ionicons name='location-outline' size={20}/>
-             <Text>Erzincan/Merkez</Text>
-            </View>
-          </View>
-
-          <View style={{flexDirection: "row"}}>
-            <MaterialCommunityIcons name='truck-delivery-outline' size={20}/>
-            <Text>Ücretsiz Kargo</Text>
-          </View>
-        </View>
-        
-          <View style={styles.cartRow}>
-            <TouchableOpacity onPress={() => {}} style={styles.cartBtn}>
-              <Text style={styles.cartTitle}>SATIN AL</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity onPress={() => {}} style={styles.addCart}>
-              <Fontisto name="shopping-bag" size={22} color={COLORS.lightWhite}/>
+              />
             </TouchableOpacity>
           </View>
+          
+        </View>
+
+        <View style={styles.descriptionWrapper}>
+          <Text style={styles.description}></Text>
+
+        </View>
 
       </View>
+
     </View>
   )
 }

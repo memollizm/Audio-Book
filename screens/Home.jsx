@@ -10,7 +10,7 @@ import ProductRow from '../components/products/ProductRow';
 
 const Home = () => {
   return (
-    <View>
+    <SafeAreaView>
       <View style={styles.appBarWrapper}>
         <View style={styles.appBar}>
           <Ionicons name='locate-outline' size={24}/>
@@ -33,7 +33,7 @@ const Home = () => {
         <Headings/>
         <ProductRow/>
       </ScrollView>
-    </View>
+    </SafeAreaView>
   )
 }
 

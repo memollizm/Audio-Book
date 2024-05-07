@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context'
 
-const profile = () => {
+const Profile = () => {
   return (
     <SafeAreaView>
       <Text>Merhaba, bu bölüm profil kısmıdır.</Text>
@@ -10,6 +10,6 @@ const profile = () => {
   )
 }
 
-export default profile
+export default Profile
 
 const styles = StyleSheet.create({})

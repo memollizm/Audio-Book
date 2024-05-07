@@ -7,7 +7,7 @@ import { COLORS, SIZES } from '../constants';
 import { useState } from 'react';
 
 
-const search = () => {
+const Search = () => {
   const [searchText, setSearchText] = useState("");
 
   return (
@@ -37,4 +37,4 @@ const search = () => {
   )
 }
 
-export default search
+export default Search
