@@ -8,4 +8,4 @@ const ProcductSchema = new mongoose.Schema({
     product_location: {type: String, required: true},
 }, {timestamps: true});
 
-module.export = module.model("Product", ProcductSchema)
+module.exports = mongoose.model("Product", ProcductSchema)
