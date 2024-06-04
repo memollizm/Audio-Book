@@ -2,12 +2,19 @@ import { StyleSheet } from "react-native";
 import { COLORS, SIZES } from "../../constants";
 
 const styles = StyleSheet.create({
+    kapsam:{
+        marginLeft:10,
+        display:"flex",
+        flexDirection:"row"
+    }
+    ,
     container: {
-        width: 182,
-        height: 240,
+        width:200,
         marginEnd: 22,
         borderRadius: SIZES.medium,
-        backgroundColor: COLORS.secondary
+        backgroundColor: COLORS.secondary,
+        display:"flex",
+        flexDirection:"r"
     },
     
     imageContainer: {
